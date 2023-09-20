@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f0df0aa71f7f8ef4d9f4c4b29f8c0e5b
+guid: f98c04bfb2bc8a4439a821df869820f4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -141,7 +141,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bloco1_0
+      name: bloco (1)_0
       rect:
         serializedVersion: 2
         x: 0
@@ -155,14 +155,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d984268616474b41b075103ed50d59d
-      internalID: -2070833875
+      spriteID: c85bf82643abb0a4a945d49f39f2586b
+      internalID: -828785671
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bloco1_1
+      name: bloco (1)_1
       rect:
         serializedVersion: 2
         x: 64
@@ -176,14 +176,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76ebc213df8336e41a869cb3b59ced4c
-      internalID: -930359112
+      spriteID: d7743b8d0580e224b9a82f75cd22e203
+      internalID: -2018412086
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bloco1_2
+      name: bloco (1)_2
       rect:
         serializedVersion: 2
         x: 128
@@ -197,14 +197,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6c8c9bb94591a9449e592645dcd16a5
-      internalID: -1917796761
+      spriteID: ea0e66e548c1a0e43ab46f81d471987e
+      internalID: 260950072
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bloco1_3
+      name: bloco (1)_3
       rect:
         serializedVersion: 2
         x: 0
@@ -218,14 +218,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97c0d3e1e1e0abf4f824c86a6f617c37
-      internalID: 926668614
+      spriteID: 76f0152f0b561a1459660ce56a3b6e4e
+      internalID: -1666399372
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bloco1_4
+      name: bloco (1)_4
       rect:
         serializedVersion: 2
         x: 64
@@ -239,14 +239,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09585fee9f99f3b4cbd420c9ec32c460
-      internalID: -1893836837
+      spriteID: 22a90c86b60b9144c86649d88f5bde34
+      internalID: -1062813403
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bloco1_5
+      name: bloco (1)_5
       rect:
         serializedVersion: 2
         x: 128
@@ -260,8 +260,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1e4dae56f4ce3f46a48d5d20d590e94
-      internalID: -1146813746
+      spriteID: 46dedce411107724996a00e1564a803d
+      internalID: -401974755
       vertices: []
       indices: 
       edges: []
@@ -277,12 +277,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      bloco1_1: -930359112
-      bloco1_2: -1917796761
-      bloco1_4: -1893836837
-      bloco1_3: 926668614
-      bloco1_5: -1146813746
-      bloco1_0: -2070833875
+      bloco (1)_4: -1062813403
+      bloco (1)_3: -1666399372
+      bloco (1)_2: 260950072
+      bloco (1)_5: -401974755
+      bloco (1)_1: -2018412086
+      bloco (1)_0: -828785671
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

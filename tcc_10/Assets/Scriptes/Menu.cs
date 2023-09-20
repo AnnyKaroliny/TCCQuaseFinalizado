@@ -5,12 +5,23 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-    public void LoadScenes(string cena)
+   public void IniciarJogo()
     {
-        SceneManager.LoadScene(cena);
+        SceneManager.LoadScene("Introdução");
     }
-    public void Quit()
+
+    public void Retornar()
     {
-        Application.Quit();
+        SceneManager.LoadScene("Tela Inicial");
+    }
+
+    public void TelaInicial()
+    {
+        SceneManager.LoadScene("Tela Inicial");
+    }
+
+    public void ReiniciarJogo()
+    {
+        SceneManager.LoadScene("Jogo");
     }
 }

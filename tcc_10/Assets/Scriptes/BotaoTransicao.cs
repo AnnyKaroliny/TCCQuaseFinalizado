@@ -20,4 +20,12 @@ public class BotaoTransicao : MonoBehaviour
         cenas[contador].SetActive(true);
 
     }
+
+    
+
+
+
+
+
+
 }

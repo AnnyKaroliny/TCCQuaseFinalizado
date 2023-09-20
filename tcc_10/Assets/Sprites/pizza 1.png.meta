@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f0df0aa71f7f8ef4d9f4c4b29f8c0e5b
+guid: 23b43a596ab1008419fde243cf39220a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -141,127 +141,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bloco1_0
+      name: Braco L
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 31
+        y: 269
+        width: 156
+        height: 106
+      alignment: 9
+      pivot: {x: 0.96373165, y: 0.032721177}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d984268616474b41b075103ed50d59d
-      internalID: -2070833875
+      spriteID: a9ddb01478138ef4faefb49e186fbc35
+      internalID: 609575143
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bloco1_1
+      name: Corpo
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 257
+        y: 105
+        width: 378
+        height: 385
+      alignment: 9
+      pivot: {x: 0.49655175, y: 0.27147093}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76ebc213df8336e41a869cb3b59ced4c
-      internalID: -930359112
+      spriteID: 8c116d4ab29133244bb820a97d7d8515
+      internalID: -1351347808
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bloco1_2
+      name: Braco R
       rect:
         serializedVersion: 2
-        x: 128
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 710
+        y: 276
+        width: 154
+        height: 103
+      alignment: 9
+      pivot: {x: 0.047173835, y: 0.069730885}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6c8c9bb94591a9449e592645dcd16a5
-      internalID: -1917796761
+      spriteID: 868198ea26736aa48bd2404ddfe845b3
+      internalID: 624406063
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bloco1_3
+      name: Perna L
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 168
+        y: 5
+        width: 61
+        height: 93
+      alignment: 9
+      pivot: {x: 0.87394416, y: 0.89944845}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97c0d3e1e1e0abf4f824c86a6f617c37
-      internalID: 926668614
+      spriteID: 55b70b5426ffa2e4dbd8d1424f8b54bd
+      internalID: -898977578
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bloco1_4
+      name: Perna R
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 692
+        y: 3
+        width: 61
+        height: 100
+      alignment: 9
+      pivot: {x: 0.12605661, y: 0.85845256}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09585fee9f99f3b4cbd420c9ec32c460
-      internalID: -1893836837
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bloco1_5
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e1e4dae56f4ce3f46a48d5d20d590e94
-      internalID: -1146813746
+      spriteID: 691b28ac0ed257b4686bcf63b05765c7
+      internalID: -292920981
       vertices: []
       indices: 
       edges: []
@@ -277,12 +256,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      bloco1_1: -930359112
-      bloco1_2: -1917796761
-      bloco1_4: -1893836837
-      bloco1_3: 926668614
-      bloco1_5: -1146813746
-      bloco1_0: -2070833875
+      Perna R: -292920981
+      Braco R: 624406063
+      Corpo: -1351347808
+      Braco L: 609575143
+      Perna L: -898977578
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
