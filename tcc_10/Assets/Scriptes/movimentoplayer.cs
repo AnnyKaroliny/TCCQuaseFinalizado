@@ -5,13 +5,11 @@ using TMPro;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
-
 public class movimentoplayer : MonoBehaviour {
 
     private inimigoR inimigoR;
     private playermovement _playerMovimento;
     private button _button;
-
 
     private Rigidbody2D rb;
     private Animator anim;
@@ -59,16 +57,13 @@ public class movimentoplayer : MonoBehaviour {
     public AudioSource SomdoTiro;
     public AudioSource SomdoBomba;
 
-
     public Button btnMunicao;
 
     public GameObject MunicaoColetavel;
 
     public float forcaBombaX, forcaBombaY;
-
     
     void Start() {
-
         inimigoR = FindObjectOfType(typeof(inimigoR)) as inimigoR;
         _playerMovimento = FindObjectOfType(typeof(playermovement)) as playermovement;
         _button = FindObjectOfType(typeof(button)) as button;
@@ -81,12 +76,10 @@ public class movimentoplayer : MonoBehaviour {
         tempoInicial = 100;
 
         btnMunicao.interactable = false;
-
-      
     }
 
-    void Update() {
-
+    void Update()
+    {
         tempoFaseJogo();
 
         if (tempoDecorrido <= 0) {
@@ -94,42 +87,34 @@ public class movimentoplayer : MonoBehaviour {
             painelGameOver.SetActive(true);
             tempoDecorrido = 0;
             _playerMovimento.speed = 0;
-
         }
 
         anim.SetBool("Jump", isGrounded);
-
 
         atirar();
     }
 
     private void FixedUpdate() {
-
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.3f, layerGround);
-
     }
 
-    private void OnCollisionEnter2D(Collision2D collision) {
-
-        if (collision.gameObject.tag == "inimigo" && morrer == false) {
-
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "inimigo" && morrer == false)
+        {
             anim.SetBool("Die", true);
             jumpForce = 0;
             _playerMovimento.speed = 0;
             morrer = true;
-
         }
 
-        if (collision.gameObject.tag == "inimigoR" && morrer == false) {
-
+        if (collision.gameObject.tag == "inimigoR" && morrer == false)
+        {
             anim.SetTrigger("Die");
             jumpForce = 0;
             _playerMovimento.speed = 0;
             morrer = true;
-
         }
-
-      
     }
 
     private void OnTriggerEnter2D(Collider2D col) {
@@ -140,7 +125,6 @@ public class movimentoplayer : MonoBehaviour {
             textoMoedas.text = moedas.ToString();
             Destroy(col.gameObject);
             SomdoMoeda.Play();
-
         }
 
         if (col.gameObject.tag == "inimigoR" && morrer == false) {
@@ -148,23 +132,20 @@ public class movimentoplayer : MonoBehaviour {
             anim.SetTrigger("Die");
             jumpForce = 0;
             morrer = true;
-
         }
 
-        if (col.gameObject.tag == "maça") {
-
+        if (col.gameObject.tag == "maça")
+        {
             maca += 1;
             textomaca.text = maca.ToString();
             Destroy(col.gameObject);
-
         }
 
-        if (col.gameObject.tag == "agua") {
-
+        if (col.gameObject.tag == "agua")
+        {
             agua += 1;
             textoagua.text = agua.ToString();
             Destroy(col.gameObject);
-
         }
 
         if (col.gameObject.tag == "Morte")
@@ -177,67 +158,56 @@ public class movimentoplayer : MonoBehaviour {
             btnMunicao.interactable = true;
             Destroy(MunicaoColetavel.gameObject);
         }
-
     }
 
     #region 
-
-    public void tempoFaseJogo() {
-
+    public void tempoFaseJogo()
+    {
         tempoDecrescente += Time.deltaTime;
 
         tempoDecorrido = tempoInicial - tempoDecrescente;
 
         tempoFase.text = tempoDecorrido.ToString("0");
-
     }
 
-    public void tiro() {
-
+    public void tiro()
+    {
         anim.SetTrigger("Tiro");
         SomdoTiro.Play();
     }
 
-    public void bomba() {
-
+    public void bomba() 
+    {
         GameObject Temporario = Instantiate(bombaM, posicaoProjetil.position, Quaternion.identity);
         Temporario.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(forcaBombaX, forcaBombaY));
         SomdoBomba.Play();
     }
 
-    public void TiroPlayerParado() {
-
+    public void TiroPlayerParado()
+    {
         GameObject temp = Instantiate(projetil);
         temp.transform.position = posicaoProjetil.position;
         temp.GetComponent<Rigidbody2D>().velocity = new Vector2(forcaTiro, 0);
-
     }
 
-    public void pulo() {
-
+    public void pulo()
+    {
         if (isGrounded == true) {
             rb.AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);
 
             SomdoPulo.Play();
-
-
         }
-
     }
 
-    public void atirar() {
-
+    public void atirar()
+    {
         
-      
-
     }
 
-    public void PainelGameOver() {
-
+    public void PainelGameOver()
+    {
         painelGameOver.SetActive(true);
-
     }
-
     #endregion
 }
 

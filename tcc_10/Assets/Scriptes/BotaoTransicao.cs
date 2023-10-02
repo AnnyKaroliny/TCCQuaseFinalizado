@@ -16,12 +16,18 @@ public class BotaoTransicao : MonoBehaviour
     public void proximaCena()
     {
         contador = contador + 1;
-        cenas[contador].SetActive(false);
+       
         cenas[contador].SetActive(true);
 
     }
 
-    
+    public void voltarCena()
+    {
+        cenas[contador].SetActive(false);
+        contador = contador - 1;
+       
+
+    }
 
 
 
